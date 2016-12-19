@@ -1,0 +1,97 @@
+* {
+	transition: 200ms;
+}
+
+*:hover {
+	transition: 200ms;
+}
+
+.container {
+	width: 1170px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
+
+.containerFluid {
+	width: 100%;
+}
+
+
+/*HEADER*/
+
+header {
+	height: 100px;
+	background: #000;
+}
+
+header > .container {
+	display: flex;
+	justify-content: space-between;	
+	align-items: center;
+	font-family: 'LatoWebSemibold';
+	font-size: 1.2em;
+}
+
+header > .container > ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header > .container > ul > li > a {
+	color: #fff;
+}
+
+header > .container > ul > li > a:hover {
+	color: #e1261e;
+}
+
+header > .container > .phone {
+	color: #e1261e;
+}
+
+/*HEADER*/
+
+
+/*MAIN*/
+
+.main {
+	background: url(../images/mainBackground.jpg) 0px 99px no-repeat;
+	background-size: cover;
+}
+
+.mainPromo {
+	font-family: 'LatoWeb';
+	color: #fff;
+	text-align: left;
+}
+
+.sliderBlock {
+	text-align: left;
+}
+
+.sliderBlock > .sliderBlockH1 {
+	color: #e1261e;
+	font-family: 'LatoWebBlack';
+	font-size: 2.8em;
+}
+
+.sliderBlock > .sliderBlockH2 {
+	color: #e1261e;
+	font-family: 'LatoWebBlack';
+	font-size: 3.6em;
+}
+
+.sliderBlock > .sliderBlockDescription {
+	color: #fff;
+	font-family: 'LatoWebBold';
+	font-size: 2em;
+}
+
+.sliderBlock > .sliderBlockButton {
+	background-color: color: #e1261e;
+	font-family: 'LatoWebBold';
+	font-size: 2em;
+	padding: 22.5px 45px;
+}
