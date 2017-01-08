@@ -6,6 +6,8 @@
 	transition: 200ms;
 }
 
+img {   max-width: 100% }
+
 .container {
 	width: 1170px;
 	padding-left: 15px;
@@ -31,6 +33,8 @@ header {
 	background: #000;
     display: flex !important;
     align-items: center;
+    position: relative;
+    z-index: 1000;
 }
 
 header > .container {
@@ -428,7 +432,7 @@ ol > li {
 	margin-top: 5vh;
     position: relative;
     z-index: 10000;
-    margin-bottom: -350px;
+    margin-bottom: -320px;
 }
 
 .contactsH1 {
