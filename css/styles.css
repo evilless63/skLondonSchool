@@ -132,7 +132,7 @@ header > .container > .phone {
 	margin-top: 8vh;
 }
 
-.sliderBlock > .sliderBlockButtonWrapper > .sliderBlockButton {
+.sliderBlockButton {
 	background-color: #e1261e;
 	font-family: 'LatoWebBold';
 	color: #fff;
@@ -190,6 +190,132 @@ header > .container > .phone {
 	min-height: calc(100vh - 165px);
 }
 
+.teachDesc {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 3vh;
+	margin-bottom: 4vh;
+}
+
+.firstTabs, .secondTabs {
+	display: flex;
+	flex-direction: column;
+	width: 310px;
+}
+
+.firstTabs_tab, .secondTabs_tab {
+    background: #fff;
+    border-radius: 6px;
+    color: #000;
+    text-align: center;
+    font-family: 'LatoWebBold';
+    font-size: 1.4em;
+    text-transform: lowercase;
+    padding: 20px 0px;
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+.firstTabs_tab:first-letter, .secondTabs_tab:first-letter {
+	color : #e1261e;
+}
+
+.firstTabs_tab:hover, .secondTabs_tab:hover {
+	background: #000;
+	color: #fff;
+}
+
+.teachContentH1 {
+	color: #fff;
+	font-family: 'LatoWebBold';
+	font-size: 3em;
+	line-height: 0.8em;
+}
+
+.teachContentH1 span {
+	color : #e1261e;
+}
+
+.teachContentH2 {
+	color: #fff;
+	font-family: 'LatoWebBold';
+	font-size: 1.8em;
+	margin-top: 4vh;
+}
+
+.teachContentH3 {
+    color: #fff;
+    font-family: 'LatoWebBold';
+    font-size: 1.25em;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+ol > li {
+	color: #fff;
+	font-family: 'LatoWebBold';
+	font-size: 1.25em;
+	padding: 0.3vh 0;
+}
+
+.teachContentBlockButtonArea {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	    margin: 2vh 0 4vh 0;
+}
+
+.teachContentButton {
+	background-color: #e1261e;
+	font-family: 'LatoWebBold';
+	color: #fff;
+    font-size: 1.4em;
+    padding: 15px 20px;
+	text-transform: lowercase;
+	border-radius: 6px;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.teachContentBlockButtonAreaPrice {
+	color: #fff;
+	font-family: 'LatoWebBold';
+	font-size: 1.4em;
+}
+
+.teachContentBlockButtonAreaPrice span {
+	color : #e1261e;
+}
+
+.teachFooter {
+	display: flex;
+	justify-content: space-around;
+}
+
+.teachFooterDesc {
+	width: 45%;
+	color: #fff;
+	font-family: 'LatoWebBold';
+	font-size: 1.45em;
+	line-height: 1.1em;
+}
+
+.teachFooterDownloadBlock {
+	width: 50%;
+}
+
+.teachFooterDownload {
+	color: #fff;
+	font-family: 'LatoWebBold';
+	font-size: 1.25em;
+	line-height: 1.1em;
+	text-decoration: underline;
+}
+
+
+.teachFooterDownload a {
+	color: #e22d25;
+}
 
 /*ABOUT*/
 
