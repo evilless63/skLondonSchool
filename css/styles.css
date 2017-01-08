@@ -17,19 +17,27 @@
 	width: 100%;
 }
 
+article {
+	display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 
 /*HEADER*/
 
 header {
-	height: 100px;
+	height: 90px;
 	background: #000;
+    display: flex !important;
+    align-items: center;
 }
 
 header > .container {
 	display: flex;
 	justify-content: space-between;	
 	align-items: center;
-	font-family: 'LatoWebSemibold';
+	font-family: 'LatoWebBold';
 	font-size: 1.2em;
 }
 
@@ -37,10 +45,13 @@ header > .container > ul {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	width: 485px;
 }
 
 header > .container > ul > li > a {
 	color: #fff;
+	text-decoration: none;
+	font-family: 'LatoWebBold';
 }
 
 header > .container > ul > li > a:hover {
@@ -57,7 +68,22 @@ header > .container > .phone {
 /*MAIN*/
 
 .main {
-	background: url(../images/mainBackground.jpg) 0px 99px no-repeat;
+	background: url(../images/mainBackground.jpg) 0px 89px no-repeat;
+	background-size: cover;
+}
+
+.teach {
+	background: url(../images/schoolBackground.jpg) 0px 89px no-repeat;
+	background-size: cover;
+}
+
+.about {
+	background: url(../images/aboutBackground.jpg) 0px 89px no-repeat;
+	background-size: cover;
+}
+
+.reviews {
+	background: url(../images/reviewsBackground.jpg) 0px 89px no-repeat;
 	background-size: cover;
 }
 
@@ -65,33 +91,195 @@ header > .container > .phone {
 	font-family: 'LatoWeb';
 	color: #fff;
 	text-align: left;
+	text-transform: lowercase;
+	font-size: 1.2em;
 }
 
 .sliderBlock {
-	text-align: left;
+    text-align: left;
+    height: 450px !important;
 }
 
 .sliderBlock > .sliderBlockH1 {
 	color: #e1261e;
-	font-family: 'LatoWebBlack';
+	font-family: 'LatoWebBold';
 	font-size: 2.8em;
+    margin-top: 12vh;
 }
 
 .sliderBlock > .sliderBlockH2 {
 	color: #e1261e;
-	font-family: 'LatoWebBlack';
+	font-family: 'LatoWebBold';
 	font-size: 3.6em;
+
 }
 
 .sliderBlock > .sliderBlockDescription {
 	color: #fff;
 	font-family: 'LatoWebBold';
-	font-size: 2em;
+	font-size: 1.6em;
+	line-height: 1.5em;
+	display: block;
+	width: 500px;
+	margin-top: 3vh;
 }
 
-.sliderBlock > .sliderBlockButton {
-	background-color: color: #e1261e;
+.sliderBlock > .sliderBlockButtonWrapper {
+	margin-top: 8vh;
+}
+
+.sliderBlock > .sliderBlockButtonWrapper > .sliderBlockButton {
+	background-color: #e1261e;
 	font-family: 'LatoWebBold';
+	color: #fff;
 	font-size: 2em;
-	padding: 22.5px 45px;
+	padding: 20px 30px;
+	text-transform: lowercase;
+	border-radius: 6px;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.mainSocial {
+	text-align: right;
+	color: #fff;
+	font-family: 'LatoWebBold';
+	font-size: 1.6em;
+	text-transform: lowercase;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.vkSocial, .instSocial  {
+	margin-left: 15px;
+}
+
+.mainSlider {
+	width: 1020px;
+	margin: 0 auto;
+	min-height: 400px;
+}
+
+.toBottom {
+    margin: 5vh auto -20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.slick-prev {
+	background: url(../images/arrowLeft.png) no-repeat !important;
+}
+
+.slick-next {
+	background: url(../images/arrowRight.png) no-repeat !important;
+}
+
+
+/*SCHOOL*/
+
+.schoolTabs {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+/*ABOUT*/
+
+.aboutRow {
+	display: flex;
+	justify-content: space-between;
+    margin-top: 5vh;
+}
+
+.aboutH1 {
+	text-align: center;
+	font-family: 'LatoWebBold';
+	font-size: 2.8em;
+	color: #fff;
+    margin-top: 7vh;
+}
+
+.aboutH1:first-letter {
+	color : #e3291c;
+}
+
+.aboutBlock {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.aboutBlockDesc {
+	font-family: 'LatoWeb';
+	color: #fff;
+	text-align: center;
+	margin-top: 27px;
+	text-transform: lowercase;
+	font-size: 1.1em;
+	line-height: 1.5em;
+}
+
+.aboutRowBottom {
+	display: flex;
+    margin-top: 5vh;
+    justify-content: center;
+}
+
+
+/*REVIEWS*/
+
+.reviewsLogo {
+	display: flex;
+	justify-content: center;
+    margin-top: 5vh;
+}
+
+.reviewsH1 {
+	font-family: 'LatoWebBold';
+	color: #fff;
+	font-size: 1.6em;
+	text-align: center;
+	margin-top: 2vh;
+}
+
+.reviewsH1:first-letter {
+	color: #e1261e;
+}
+
+.reviewsRow {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.reviewsBlock {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	width: 30%;
+}
+
+.reviewsBlock > img {
+	margin-top: 3vh;
+}
+
+.reviewsBlockHeader {
+	font-family: 'LatoWebBold';
+	color: #fff;
+	font-size: 1.2em;
+	text-align: center;
+	margin-top: 2vh;
+}
+
+.reviewsBlockDesc {
+	font-family: 'LatoWeb';
+	color: #fff;
+	text-align: center;
+	text-transform: lowercase;
+	font-size: 1.05em;
+	line-height: 1.8em;
+	margin-top: 1vh;
 }
