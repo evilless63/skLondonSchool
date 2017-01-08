@@ -13,5 +13,15 @@ $(document).ready(function(){
 		anchors:['main', 'teach']
 	});
 
+	$('.menuLink').click(function(){
+		var link = $(this).attr('href');
+		$('ul a').each(function(){
+			$(this).removeClass('activeLink');
+			if($(this).attr('href') == link){
+				$(this).addClass('activeLink');
+			}
+		});
+
+	});
 
 });

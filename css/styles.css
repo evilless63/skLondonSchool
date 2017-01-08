@@ -58,6 +58,10 @@ header > .container > ul > li > a:hover {
 	color: #e1261e;
 }
 
+.activeLink {
+	color: #e1261e !important;
+}
+
 header > .container > .phone {
 	color: #e1261e;
 }
@@ -182,6 +186,10 @@ header > .container > .phone {
 	justify-content: space-between;
 }
 
+.teachContainer {
+	min-height: calc(100vh - 165px);
+}
+
 
 /*ABOUT*/
 
@@ -282,4 +290,88 @@ header > .container > .phone {
 	font-size: 1.05em;
 	line-height: 1.8em;
 	margin-top: 1vh;
+}
+
+/*CONTACTS*/
+
+.contactsBlock {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 5vh;
+}
+
+.contactsH1 {
+	font-family: 'LatoWebBold';
+	color: #000;
+	font-size: 2.3em;
+	text-align: center;
+	margin-top: 3vh;
+}
+
+.contactsDesc {
+	font-family: 'LatoWeb';
+	color: #000;
+	text-align: center;
+	font-size: 1.2em;
+	line-height: 1.5em;
+	margin-top: 4vh;
+	font-weight: 700;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media (min-height: 769px) {
+ .sliderBlock {
+    text-align: left;
+    height: 650px !important;
+}
+
+	.mainSlider  {
+		margin-top: 4vh;
+	}
+
+.aboutH1 {
+    text-align: center;
+    font-family: 'LatoWebBold';
+    font-size: 2.8em;
+    color: #fff;
+    margin-top: 12vh;
+}	
+
+	.aboutRow {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10vh;
+}
+
+.toBottom {
+    margin: 9vh auto -20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.reviewsLogo {
+    display: flex;
+    justify-content: center;
+    margin-top: 6vh;
+}
+
+.reviewsH1 {
+    font-family: 'LatoWebBold';
+    color: #fff;
+    font-size: 1.6em;
+    text-align: center;
+    margin-top: 6vh;
+}
+
+.reviewsRow {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 6vh;
+}
+
 }
