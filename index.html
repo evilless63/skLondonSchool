@@ -18,6 +18,20 @@
 	<title>Учебный центр «LONDON»</title>
 </head>
 <body>
+<div class="modalWindowWrapper">
+	<div class="modalWindow">
+		<div class="modalWindowClose">
+			X
+		</div>
+		<div class="modalWindowHeader">
+			Записаться на курсы
+		</div>
+		<div class="modalWindowToggler">
+			<span class="modalWindowTogglerCourses modalWindowTogglerButton" text="Записаться на курсы" >Курсы</span>
+			<span class="modalWindowTogglerModel modalWindowTogglerButton" text="Записаться в качестве модели" >Моделью</span>
+		</div>
+	</div>
+</div>	
 	<div id="fullpage">
 		<article class="section active main" data-anchor="main">
 			<header class="containerFluid">
@@ -30,7 +44,7 @@
 						<li><a class="menuLink" href="#reviews">Отзывы</a></li>
 						<li><a class="menuLink" href="#contacts">Контакты</a></li>
 					</ul>
-					<div class="phone">8 (846) 989-28-82</div>
+					<div class="phone">+7 (927) 291-78-88</div>
 				</div>
 			</header>
 				<div class="container">
@@ -47,7 +61,7 @@
 								преводавателей, нажмите кнопку ниже !
 							</div>
 							<div class="sliderBlockButtonWrapper">
-								<a class="sliderBlockButton menuLink" href="#teach">
+								<a class="sliderBlockButton menuLink modalFormButton" href="#">
 									Записаться
 								</a>
 							</div>
@@ -61,7 +75,7 @@
 								преводавателей, нажмите кнопку ниже !
 							</div>
 							<div class="sliderBlockButtonWrapper">
-								<a class="sliderBlockButton menuLink" href="#teach">
+								<a class="sliderBlockButton menuLink modalFormButton" href="#">
 									Записаться
 								</a>
 							</div>
@@ -75,7 +89,7 @@
 								преводавателей, нажмите кнопку ниже !
 							</div>
 							<div class="sliderBlockButtonWrapper">
-								<a class="sliderBlockButton menuLink" href="#teach">
+								<a class="sliderBlockButton menuLink modalFormButton" href="#">
 									Записаться
 								</a>
 							</div>
@@ -106,44 +120,86 @@
 						<li><a class="menuLink" href="#reviews">Отзывы</a></li>
 						<li><a class="menuLink" href="#contacts">Контакты</a></li>
 					</ul>
-					<div class="phone">8 (846) 989-28-82</div>
+					<div class="phone">+7 (927) 291-78-88</div>
 				</div>
 			</header>
 			<div class="container">
 				<div class="teachContainer">
 					<div class="teachDesc">
 						<div class="firstTabs">
-							<a href="#" class="firstTabs_tab">
+							<a href="#" idOpen="parikmaherskoe" class="firstTabs_tab tabs_active">
 								Парикмахерское исскуство
 							</a>
-							<a href="#" class="firstTabs_tab">
+							<a href="#" idOpen="nogtevoi" class="firstTabs_tab">
 								Ногтевой сервис
 							</a>
-							<a href="#" class="firstTabs_tab">
+							<a href="#" idOpen="vizazh" class="firstTabs_tab">
 								Визаж
 							</a>
-							<a href="#" class="firstTabs_tab">
+							<a href="#" idOpen="brovi" class="firstTabs_tab">
 								Архитектура бровей
 							</a>
 						</div>
-						<div class="secondTabs">
-							<a href="#" class="secondTabs_tab">
+						<div class="secondTabs" id="parikmaherskoe">
+							<a href="#" idOpen="ParikPerv" class="secondTabs_tab tabs_active">
 								Базовый курс
 							</a>
-							<a href="#" class="secondTabs_tab">
+							<a href="#" idOpen="ParikVtor" class="secondTabs_tab">
 								Стаж работы менее 1 года
 							</a>
-							<a href="#" class="secondTabs_tab">
+							<a href="#" idOpen="ParikTret" class="secondTabs_tab">
 								Повышение квалификации
 							</a>
 						</div>
-						<div class="teachContent">
+						<div class="secondTabs" id="nogtevoi">
+							<a href="#" class="secondTabs_tab">
+								Базовый курс Ногт
+							</a>
+							<a href="#" class="secondTabs_tab">
+								Стаж работы менее 1 года Ногт
+							</a>
+							<a href="#" class="secondTabs_tab">
+								Повышение квалификации Ногт
+							</a>
+						</div>
+						<div class="secondTabs" id="vizazh">
+							<a href="#" class="secondTabs_tab">
+								Базовый курс Виз
+							</a>
+							<a href="#" class="secondTabs_tab">
+								Стаж работы менее 1 года Виз
+							</a>
+							<a href="#" class="secondTabs_tab">
+								Повышение квалификации Виз
+							</a>
+						</div>
+						<div class="secondTabs" id="brovi">
+							<a href="#" idOpen="BrowStilist" class="secondTabs_tab">
+								«Brow - стилист» за 2 дня
+							</a>
+							<a href="#" idOpen="BrowTriding" class="secondTabs_tab">
+								«ТРИДИНГ»
+							</a>
+							<a href="#" idOpen="BrowBiotatuazh" class="secondTabs_tab">
+								Биотатуаж бровей
+							</a>
+							<a href="#" idOpen="BrowArtist" class="secondTabs_tab">
+								«BROW ARTIST»
+							</a>
+							<a href="#" idOpen="BrowForMe" class="secondTabs_tab">
+								«Брови для себя»
+							</a>
+						</div>
+
+						<div class="teachContentZaglushka" >
+						</div>
+
+						<div class="teachContent" id="ParikPerv">
 							<h1 class="teachContentH1">
-								<span>“П</span>арикмахерское<br>
-								исскуство”
+								<span>“П</span>ервый уровень”
 							</h1>
 							<h2 class="teachContentH2">
-								БАЗОВЫЙ КУРС
+								Базовый курс.
 							</h2>
 							<h3 class="teachContentH3">
 								Пакеты:
@@ -156,26 +212,253 @@
 								<li>5.&nbsp;&nbsp;Укладки;</li>
 							</ol>
 							<div class="teachContentBlockButtonArea">
-								<a class="teachContentButton" href="#teach">
+								<a class="teachContentButton modalFormButton" href="#teach">
 									записаться
 								</a>
 								<div class="teachContentBlockButtonAreaPrice">
 									<span>- от</span> 15.000 т.р.<br>
-									месяц
+									В месяц
 								</div>
 							</div>
 							<div class="sliderBlockButtonWrapper">
-								<a class="teachContentButton" href="#teach">
+								<a class="teachContentButton modalFormButton" href="#teach">
 									записаться моделью
 								</a>
 							</div>
 						</div>
+						<div class="teachContent" id="ParikVtor">
+							<h1 class="teachContentH1">
+								<span>“В</span>торой уровень”
+							</h1>
+							<h2 class="teachContentH2">
+								Небольшой стаж работы, менее 1 года.
+							</h2>
+							<h3 class="teachContentH3">
+								Пакеты:
+							</h3>
+							<ol>
+								<li>1.&nbsp;&nbsp;Женские стрижки- трансформеры ( не требующие укладок);</li>
+								<li>2.&nbsp;&nbsp;Мужские салонные стрижки;</li>
+								<li>3.&nbsp;&nbsp;Техники салонного окрашивания волос;</li>
+								<li>4.&nbsp;&nbsp;Укладки, прически;</li>
+							</ol>
+							<div class="teachContentBlockButtonArea">
+								<a class="teachContentButton modalFormButton" href="#teach">
+									записаться
+								</a>
+								<div class="teachContentBlockButtonAreaPrice">
+									<span>- от</span> 10.000 т.р.<br>
+									За любой пакет
+								</div>
+							</div>
+							<div class="sliderBlockButtonWrapper">
+								<a class="teachContentButton modalFormButton" href="#teach">
+									записаться моделью
+								</a>
+							</div>
+						</div>
+						<div class="teachContent" id="ParikTret">
+							<h1 class="teachContentH1">
+								<span>“Т</span>ретий уровень”
+							</h1>
+							<h2 class="teachContentH2">
+								Повышение квалификации.
+							</h2>
+							<h3 class="teachContentH3">
+								Пакеты:
+							</h3>
+							<ol>
+								<li>1.&nbsp;&nbsp;Коммерческие стрижки;</li>
+								<li>2.&nbsp;&nbsp;Продвинутые прически;</li>
+								<li>3.&nbsp;&nbsp;Свадебные прически;</li>
+								<li>4.&nbsp;&nbsp;Локоны;</li>
+							</ol>
+							<div class="teachContentBlockButtonArea">
+								<a class="teachContentButton modalFormButton" href="#teach">
+									записаться
+								</a>
+								<div class="teachContentBlockButtonAreaPrice">
+									<span>- от</span> 8.000 т.р.<br>
+									За любой пакет
+								</div>
+							</div>
+							<div class="sliderBlockButtonWrapper">
+								<a class="teachContentButton modalFormButton" href="#teach">
+									записаться моделью
+								</a>
+							</div>
+						</div>
+
+						<div class="teachContent" id="BrowStilist">
+							<h1 class="teachContentH1">
+								<span>“B</span>row- стилист<br>
+								за 2 дня”
+							</h1>
+							<h2 class="teachContentH2">
+								Архитектура бровей — искусство по коррекции и художественному<br>оформлению бровей.
+							</h2>
+							<h3 class="teachContentH3">
+								Пакеты:
+							</h3>
+							<ol>
+								<li>1.&nbsp;&nbsp;Моделирование идеальной формы брови;</li>
+								<li>2.&nbsp;&nbsp;2 вида коррекции формы бровей;</li>
+								<li>3.&nbsp;&nbsp;Техники и методы работы с пинцетом. Тридинг;</li>
+								<li>4.&nbsp;&nbsp;Нюансы окрашивания бровей;</li>
+								<li>5.&nbsp;&nbsp;Работа со сложными бровями;</li>
+								<li>6.&nbsp;&nbsp;Финишное оформление;</li>
+							</ol>
+							<div class="teachContentBlockButtonArea">
+								<a class="teachContentButton modalFormButton" href="#teach">
+									записаться
+								</a>
+								<div class="teachContentBlockButtonAreaPrice">
+									<span>- от</span> 3.500 т.р.<br>
+									2 дня
+								</div>
+							</div>
+							<div class="sliderBlockButtonWrapper">
+								<a class="teachContentButton modalFormButton" href="#teach">
+									записаться моделью
+								</a>
+							</div>
+						</div>
+						<div class="teachContent" id="BrowTriding">
+							<h1 class="teachContentH1">
+								<span>“Т</span>ридинг”
+							</h1>
+							<h2 class="teachContentH2">
+								Тридинг – новый уровень<br>в исскустве идеальных бровей.
+							</h2>
+							<h3 class="teachContentH3">
+								Пакеты:
+							</h3>
+							<ol>
+								<li>1.&nbsp;&nbsp;Постановка руки;</li>
+								<li>2.&nbsp;&nbsp;Отработка техник Тридинга;</li>
+								<li>3.&nbsp;&nbsp;Разбор ошибок;</li>
+							</ol>
+							<div class="teachContentBlockButtonArea">
+								<a class="teachContentButton modalFormButton" href="#teach">
+									записаться
+								</a>
+								<div class="teachContentBlockButtonAreaPrice">
+									<span>- от</span> 2.000 т.р.<br>
+									1 день
+								</div>
+							</div>
+							<div class="sliderBlockButtonWrapper">
+								<a class="teachContentButton modalFormButton" href="#teach">
+									записаться моделью
+								</a>
+							</div>
+						</div>
+						<div class="teachContent" id="BrowBiotatuazh">
+							<h1 class="teachContentH1">
+								<span>“Б</span>иотатуаж<br>
+								бровей”
+							</h1>
+							<h2 class="teachContentH2">
+								Стойкое лечебное<br>окрашивание.
+							</h2>
+							<h3 class="teachContentH3">
+								Пакеты:
+							</h3>
+							<ol>
+								<li>1.&nbsp;&nbsp;Работа с симметрией;</li>
+								<li>2.&nbsp;&nbsp;Моделирование идеальной формы;</li>
+								<li>3.&nbsp;&nbsp;Работа с непослушными бровями;</li>
+								<li>4.&nbsp;&nbsp;2 вида  коррекции формы;</li>
+								<li>5.&nbsp;&nbsp;Окрашивание бровей хной;</li>
+								<li>6.&nbsp;&nbsp;Финишное оформление;</li>
+								<li>7.&nbsp;&nbsp;Разбор ошибок;</li>
+							</ol>
+							<div class="teachContentBlockButtonArea">
+								<a class="teachContentButton modalFormButton" href="#teach">
+									записаться
+								</a>
+								<div class="teachContentBlockButtonAreaPrice">
+									<span>- от</span> 4.000 т.р.<br>
+									1 день
+								</div>
+							</div>
+							<div class="sliderBlockButtonWrapper">
+								<a class="teachContentButton modalFormButton" href="#teach">
+									записаться моделью
+								</a>
+							</div>
+						</div>
+						<div class="teachContent" id="BrowArtist">
+							<h1 class="teachContentH1">
+								<span>“B</span>ROW ARTIST”
+							</h1>
+							<h2 class="teachContentH2">
+								Курс для практикующих<br>мастеров.
+							</h2>
+							<h3 class="teachContentH3">
+								Пакеты:
+							</h3>
+							<ol>
+								<li>1.&nbsp;&nbsp;Работа с симметрией;</li>
+								<li>2.&nbsp;&nbsp;Техники и методы работы с пинцетом. Тридинг;</li>
+								<li>3.&nbsp;&nbsp;Колористика в окрашивание бровей краской;</li>
+								<li>4.&nbsp;&nbsp;Нюансы окрашивания хной;</li>
+								<li>5.&nbsp;&nbsp;Работа со сложными бровями;</li>
+							</ol>
+							<div class="teachContentBlockButtonArea">
+								<a class="teachContentButton modalFormButton" href="#teach">
+									записаться
+								</a>
+								<div class="teachContentBlockButtonAreaPrice">
+									<span>- от</span> 4.500 т.р.<br>
+									2 дня
+								</div>
+							</div>
+							<div class="sliderBlockButtonWrapper">
+								<a class="teachContentButton modalFormButton" href="#teach">
+									записаться моделью
+								</a>
+							</div>
+						</div>
+						<div class="teachContent" id="BrowForMe">
+							<h1 class="teachContentH1">
+								<span>“Б</span>рови для себя”
+							</h1>
+<!-- 							<h2 class="teachContentH2">
+								БАЗОВЫЙ КУРС
+							</h2> -->
+							<h3 class="teachContentH3">
+								Пакеты:
+							</h3>
+							<ol>
+								<li>1.&nbsp;&nbsp;Строение бровей;</li>
+								<li>2.&nbsp;&nbsp;Правило «Золотого сечения»;</li>
+								<li>3.&nbsp;&nbsp;Моделирование идеальной формы бровей именно для Вас;</li>
+								<li>4.&nbsp;&nbsp;2 вида коррекции формы бровей;</li>
+								<li>5.&nbsp;&nbsp;Окрашивание бровей краской;</li>
+								<li>6.&nbsp;&nbsp;Окрашивание бровей хной;</li>
+							</ol>
+							<div class="teachContentBlockButtonArea">
+								<a class="teachContentButton modalFormButton" href="#teach">
+									записаться
+								</a>
+								<div class="teachContentBlockButtonAreaPrice">
+									<span>- от</span> 2.000 т.р.<br>
+									1 день
+								</div>
+							</div>
+							<div class="sliderBlockButtonWrapper">
+								<a class="teachContentButton modalFormButton" href="#teach">
+									записаться моделью
+								</a>
+							</div>
+						</div>
+
 					</div>
 					<div class="teachFooter">
 						<div class="teachFooterDesc">
-							Подробнее по телефону: +7(846) 989-28-82.
 							Записаться на пробные бесплатные занятия
-							у менеджера: +7( 927)291-78-88.
+							у менеджера: +7 (927) 291-78-88.
 						</div>
 						<div class="teachFooterDownloadBlock">
 							<div class="teachFooterDownload">
@@ -201,7 +484,7 @@
 						<li><a class="menuLink" href="#reviews">Отзывы</a></li>
 						<li><a class="menuLink" href="#contacts">Контакты</a></li>
 					</ul>
-					<div class="phone">8 (846) 989-28-82</div>
+					<div class="phone">+7 (927) 291-78-88</div>
 				</div>
 			</header>
 				<div class="container">
@@ -223,7 +506,7 @@
 							<div class="aboutBlock">
 								<img src="images/aboutGirl.png" alt="">
 								<div class="aboutBlockDesc">
-									Моделей предоставляет студия или можно придти со своей  
+									Возможность выбрать дни для обучения 
 								</div>
 							</div>
 							<div class="aboutBlock">
@@ -265,7 +548,7 @@
 						<li><a class="menuLink" href="#reviews">Отзывы</a></li>
 						<li><a class="menuLink" href="#contacts">Контакты</a></li>
 					</ul>
-					<div class="phone">8 (846) 989-28-82</div>
+					<div class="phone">+7 (927) 291-78-88</div>
 				</div>
 			</header>
 				<div class="container">
@@ -326,7 +609,7 @@
 						<li><a class="menuLink" href="#reviews">Отзывы</a></li>
 						<li><a class="menuLink" href="#contacts">Контакты</a></li>
 					</ul>
-					<div class="phone">8 (846) 989-28-82</div>
+					<div class="phone">+7 (927) 291-78-88</div>
 				</div>
 			</header>
 				<div class="container contactsBlock">
@@ -334,7 +617,7 @@
 					<h1 class="contactsH1">Наши контакты</h1>
 					<p class="contactsDesc">
 						Студия красоты «LONDON», Ново- Садовая ул,179<br>
-						8 (846) 989-28-82<br>
+						+7 (927) 291-78-88<br>
 						График работы:<br>
 						Пн-Сб с 9:00 до 21:00<br>
 						Вс с 10:00 до 17:00<br>
@@ -343,5 +626,23 @@
 			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=GDOvOrPjqZ0no8CRf426vXOGjHtlJxBs&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
 		</article>	
 	</div>
+<!-- Begin LeadBack code {literal} -->
+<script>
+    var _emv = _emv || [];
+    _emv['campaign'] = 'df0b8fb21c532596752f0608';
+    
+    (function() {
+        var em = document.createElement('script'); em.type = 'text/javascript'; em.async = true;
+        em.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'leadback.ru/js/leadback.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(em, s);
+    })();
+</script>
+<!-- End LeadBack code {/literal} -->	
+<!-- <script type="text/javascript" src="//vk.com/js/api/openapi.js?137"></script> -->
+<!-- VK Widget -->
+<!-- <div id="vk_community_messages"></div> -->
+<!-- <script type="text/javascript">
+VK.Widgets.CommunityMessages("vk_community_messages", 88239267, {expandTimeout: "15000",tooltipButtonText: "Есть вопрос?"});
+</script> -->
 </body>
 </html>

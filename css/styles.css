@@ -6,6 +6,13 @@
 	transition: 200ms;
 }
 
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
 img {   max-width: 100% }
 
 .container {
@@ -524,4 +531,113 @@ ol > li {
   -o-filter: grayscale(100%);
   filter: grayscale(100%);
   filter: gray; /* IE 6-9 */
+}
+
+
+
+
+.displayTabs {
+    display:flex !important;
+}  
+
+.displayTabsNone {
+	display:none !important;
+}  
+
+
+
+.modalWindowWrapper {
+	background: rgba(0, 0, 0, 0.4);
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 5000;
+}
+
+.modalWindow {
+	background: url(../images/modalBackground.jpg) top center no-repeat;
+	width: 830px;
+	height: 559px;
+	margin: 4% auto;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.modalWindowClose {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	color: #fff;
+	font-family: 'LatoWebBold';
+	font-size: 1.25em;
+	cursor: pointer;
+}
+
+.modalWindowHeader {
+	color: #fff;
+	font-family: 'LatoWebBold';
+	font-size: 1.9em;	
+	margin-top: 80px;
+}
+
+.modalWindowToggler {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.modalWindowTogglerButton {
+    color: #e1261e;
+    font-family: 'LatoWebBold';
+    font-size: 1em;
+    text-transform: uppercase;
+    background: transparent;
+    border: #fff solid 3px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 185px;
+    height: 50px;
+}
+
+.modalWindowTogglerButtonActive, .modalWindowTogglerButton:hover {
+	color: #fff;
+	font-family: 'LatoWebBold';
+	font-size: 1em;
+	text-transform: uppercase;
+	background: #000;
+	border: #000 solid 3px;
+	cursor: pointer;
+}
+.modalWindowTogglerButtonActive:first-letter, .modalWindowTogglerButton:hover:first-letter  {
+	color: #e1261e;
+}
+
+.modalWindowTogglerCourses {
+	border-top-left-radius: 30%;
+	border-bottom-left-radius: 30%; 
+	border-right: none;
+}
+
+.modalWindowTogglerModel {
+	border-top-right-radius: 30%;
+	border-bottom-right-radius: 30%;
+	border-left: none;
+}
+
+.tabs_active {
+	    background: #000;
+    color: #fff;
+}
+
+.teachContent {
+	    width: 480px;
+}
+
+.teachContentZaglushka {
+	 width: 480px;
 }
