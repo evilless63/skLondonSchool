@@ -15,6 +15,9 @@
 	<script src="plugins/slick/slick.min.js"></script>
 	<script src="js/script.js"></script>
 	<meta name=viewport content="width=device-width">
+	
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<script src="https://vk.com/js/api/openapi.js?139" type="text/javascript"></script>
 	<title>Учебный центр «LONDON»</title>
 </head>
 <body>
@@ -32,21 +35,21 @@
 		</div>
 	</div>
 </div>	
-	<div id="fullpage">
-		<article class="section active main" data-anchor="main">
-			<header class="containerFluid">
+	<header class="containerFluid">
 				<div class="container">
 					<img src="images/logo.png" alt="" class="logo">
-					<ul>
-						<li><a class="menuLink" href="#main">Главная</a></li>
-						<li><a class="menuLink" href="#teach">Школа</a></li>
-						<li><a class="menuLink" href="#about">О нас</a></li>
-						<li><a class="menuLink" href="#reviews">Отзывы</a></li>
-						<li><a class="menuLink" href="#contacts">Контакты</a></li>
+					<ul id="navigation">
+						<li data-menuanchor="main" class="active"><a class="menuLink" href="#main">Главная</a></li>
+						<li data-menuanchor="teach"><a class="menuLink" href="#teach">Школа</a></li>
+						<li data-menuanchor="about"><a class="menuLink" href="#about">О нас</a></li>
+						<li data-menuanchor="reviews"><a class="menuLink" href="#reviews">Отзывы</a></li>
+						<li data-menuanchor="contacts"><a class="menuLink" href="#contacts">Контакты</a></li>
 					</ul>
 					<div class="phone">+7 (927) 291-78-88</div>
 				</div>
-			</header>
+	</header>
+	<div id="fullpage">
+		<article class="section active main" data-anchor="main">
 				<div class="container">
 					<div class="mainPromo">
 						Территория профессионального<br>обучения
@@ -110,19 +113,19 @@
 				</div>
 		</article>	
 		<article class="section teach" data-anchor="teach">
-			<header class="containerFluid">
+			<!-- <header class="containerFluid">
 				<div class="container">
 					<img src="images/logo.png" alt="" class="logo">
 					<ul>
-						<li><a class="menuLink" href="#main">Главная</a></li>
-						<li><a class="menuLink" href="#teach">Школа</a></li>
-						<li><a class="menuLink" href="#about">О нас</a></li>
-						<li><a class="menuLink" href="#reviews">Отзывы</a></li>
-						<li><a class="menuLink" href="#contacts">Контакты</a></li>
+						<li data-menuanchor="main" class="active"><a class="menuLink" href="#main">Главная</a></li>
+						<li data-menuanchor="teach"><a class="menuLink" href="#teach">Школа</a></li>
+						<li data-menuanchor="about"><a class="menuLink" href="#about">О нас</a></li>
+						<li data-menuanchor="reviews"><a class="menuLink" href="#reviews">Отзывы</a></li>
+						<li data-menuanchor="contacts"><a class="menuLink" href="#contacts">Контакты</a></li>
 					</ul>
 					<div class="phone">+7 (927) 291-78-88</div>
 				</div>
-			</header>
+			</header> -->
 			<div class="container">
 				<div class="teachContainer">
 					<div class="teachDesc">
@@ -152,14 +155,23 @@
 							</a>
 						</div>
 						<div class="secondTabs" id="nogtevoi">
-							<a href="#" class="secondTabs_tab">
-								Базовый курс Ногт
+							<a href="#" idOpen="NogtUniversal" class="secondTabs_tab">
+								Мастер-универсал - 100% трудоустройство
 							</a>
-							<a href="#" class="secondTabs_tab">
-								Стаж работы менее 1 года Ногт
+							<a href="#" idOpen="NogtManikur" class="secondTabs_tab">
+								Мастер маникюра
 							</a>
-							<a href="#" class="secondTabs_tab">
-								Повышение квалификации Ногт
+							<a href="#" idOpen="NogtPedikur" class="secondTabs_tab">
+								Мастер по педикюру
+							</a>
+							<a href="#" idOpen="NogtDizain" class="secondTabs_tab">
+								Дизайн ногтей
+							</a>
+							<a href="#" idOpen="NogtApparatn" class="secondTabs_tab">
+								Аппаратный маникюр, педикюр
+							</a>
+							<a href="#" idOpen="NogtModel" class="secondTabs_tab">
+								Моделирование ногтей гелем
 							</a>
 						</div>
 						<div class="secondTabs" id="vizazh">
@@ -280,6 +292,196 @@
 								<div class="teachContentBlockButtonAreaPrice">
 									<span>- от</span> 8.000 т.р.<br>
 									За любой пакет
+								</div>
+							</div>
+							<div class="sliderBlockButtonWrapper">
+								<a class="teachContentButton modalFormButton" href="#teach">
+									записаться моделью
+								</a>
+							</div>
+						</div>
+
+						<div class="teachContent" id="NogtUniversal">
+							<h1 class="teachContentH1">
+								<span>“М</span>астер-универсал 100%<br>трудоустройство”
+							</h1>
+							<h2 class="teachContentH2">
+								90% обучения - ПРАКТИКА НА МОДЕЛЯХ.
+							</h2>
+							<h3 class="teachContentH3">
+								Курс:
+							</h3>
+							<ol>
+								<li>1.&nbsp;&nbsp;5 видов маникюра;</li>
+								<li>2.&nbsp;&nbsp;3 вида педикюра;</li>
+								<li>3.&nbsp;&nbsp;2 вида покрытия в маникюре и педикюре;</li>
+								<li>4.&nbsp;&nbsp;Наращивание ногтей по гелевой технологии (3 вида форм);</li>
+								<li>5.&nbsp;&nbsp;Выравнивание и укрепление ногтей;</li>
+								<li>6.&nbsp;&nbsp;SPA- уход;</li>
+							</ol>
+							<div class="teachContentBlockButtonArea">
+								<a class="teachContentButton modalFormButton" href="#teach">
+									записаться
+								</a>
+								<div class="teachContentBlockButtonAreaPrice">
+									<span>- от</span> 12.000 т.р.<br>
+									6 дней
+								</div>
+							</div>
+							<div class="sliderBlockButtonWrapper">
+								<a class="teachContentButton modalFormButton" href="#teach">
+									записаться моделью
+								</a>
+							</div>
+						</div>
+						<div class="teachContent" id="NogtManikur">
+							<h1 class="teachContentH1">
+								<span>“М</span>астер маникюра”
+							</h1>
+							<h2 class="teachContentH2">
+								90% практики - 5 моделей.
+							</h2>
+							<h3 class="teachContentH3">
+								Курс:
+							</h3>
+							<ol>
+								<li>1.&nbsp;&nbsp;5 видов маникюра;</li>
+								<li>2.&nbsp;&nbsp;Покрытие лаком;</li>
+								<li>3.&nbsp;&nbsp;Снятие гель- лака;</li>
+								<li>4.&nbsp;&nbsp;Покрытие гель- лаком;</li>
+								<li>5.&nbsp;&nbsp;Выравнивание и укрепление ногтей;</li>
+								<li>6.&nbsp;&nbsp;SPA - уход;</li>
+							</ol>
+							<div class="teachContentBlockButtonArea">
+								<a class="teachContentButton modalFormButton" href="#teach">
+									записаться
+								</a>
+								<div class="teachContentBlockButtonAreaPrice">
+									<span>- от</span> 6.500 т.р.<br>
+									3 дня
+								</div>
+							</div>
+							<div class="sliderBlockButtonWrapper">
+								<a class="teachContentButton modalFormButton" href="#teach">
+									записаться моделью
+								</a>
+							</div>
+						</div>
+						<div class="teachContent" id="NogtPedikur">
+							<h1 class="teachContentH1">
+								<span>“М</span>астер по педикюру”
+							</h1>
+							<h2 class="teachContentH2">
+								90 % практики - 4 модели.
+							</h2>
+							<h3 class="teachContentH3">
+								Курс:
+							</h3>
+							<ol>
+								<li>1.&nbsp;&nbsp;3 вида педикюра;</li>
+								<li>2.&nbsp;&nbsp;2 вида покрытия;</li>
+								<li>3.&nbsp;&nbsp;Коррекция вросшего ногтя;</li>
+								<li>4.&nbsp;&nbsp;Удаление мозолей, натоптышей;</li>
+								<li>4.&nbsp;&nbsp;Массаж стоп;</li>
+							</ol>
+							<div class="teachContentBlockButtonArea">
+								<a class="teachContentButton modalFormButton" href="#teach">
+									записаться
+								</a>
+								<div class="teachContentBlockButtonAreaPrice">
+									<span>- от</span> 5.500 т.р.<br>
+									3 дня
+								</div>
+							</div>
+							<div class="sliderBlockButtonWrapper">
+								<a class="teachContentButton modalFormButton" href="#teach">
+									записаться моделью
+								</a>
+							</div>
+						</div>
+						<div class="teachContent" id="NogtDizain">
+							<h1 class="teachContentH1">
+								<span>“Д</span>изайн ногтей”
+							</h1>
+							<h3 class="teachContentH3">
+								Пакеты:
+							</h3>
+							<ol>
+								<li>1.&nbsp;&nbsp;Однотонный дизайн;</li>
+								<li>2.&nbsp;&nbsp;Акриловая лепка;</li>
+								<li>3.&nbsp;&nbsp;Френч;</li>
+								<li>4.&nbsp;&nbsp;Аэрография;</li>
+								<li>5.&nbsp;&nbsp;Стразы в дизайне;</li>
+								<li>6.&nbsp;&nbsp;Мраморный дизайн;</li>
+								<li>7.&nbsp;&nbsp;Рисунки песком;</li>
+							</ol>
+							<div class="teachContentBlockButtonArea">
+								<a class="teachContentButton modalFormButton" href="#teach">
+									записаться
+								</a>
+								<div class="teachContentBlockButtonAreaPrice">
+									<span>- от</span> 4.000 т.р.<br>
+									1 день
+								</div>
+							</div>
+							<div class="sliderBlockButtonWrapper">
+								<a class="teachContentButton modalFormButton" href="#teach">
+									записаться моделью
+								</a>
+							</div>
+						</div>
+						<div class="teachContent" id="NogtApparatn">
+							<h1 class="teachContentH1">
+								<span>“А</span>ппаратный маникюр, педикюр”
+							</h1>
+							<h3 class="teachContentH3">
+								Курс:
+							</h3>
+							<ol>
+								<li>1.&nbsp;&nbsp;Аппаратный маникюр;</li>
+								<li>2.&nbsp;&nbsp;Аппаратный педикюр;</li>
+								<li>3.&nbsp;&nbsp;Идеальное покрытие ногтей гель лаком на руках и ногах;</li>
+								<li>4.&nbsp;&nbsp;Выравнивание и укрепление ногтей;</li>
+								<li>4.&nbsp;&nbsp;Снятие гель лака фрезой;</li>
+								<li>4.&nbsp;&nbsp;Современные экспресс дизайны;</li>
+							</ol>
+							<div class="teachContentBlockButtonArea">
+								<a class="teachContentButton modalFormButton" href="#teach">
+									записаться
+								</a>
+								<div class="teachContentBlockButtonAreaPrice">
+									<span>- от</span> 6.500 т.р.<br>
+									1 день
+								</div>
+							</div>
+							<div class="sliderBlockButtonWrapper">
+								<a class="teachContentButton modalFormButton" href="#teach">
+									записаться моделью
+								</a>
+							</div>
+						</div>
+						<div class="teachContent" id="NogtModel">
+							<h1 class="teachContentH1">
+								<span>“М</span>оделирование ногтей гелем”
+							</h1>
+							<h3 class="teachContentH3">
+								Курс:
+							</h3>
+							<ol>
+								<li>1.&nbsp;&nbsp;Моделирование ногтей гелем;</li>
+								<li>2.&nbsp;&nbsp;Отработка различных форм;</li>
+								<li>3.&nbsp;&nbsp;Коррекция;</li>
+								<li>4.&nbsp;&nbsp;Быстрый и эффектный дизайн;</li>
+								<li>5.&nbsp;&nbsp;Акриловая лепка;</li>
+								<li>6.&nbsp;&nbsp;Стандарты и сан.нормы;</li>
+							</ol>
+							<div class="teachContentBlockButtonArea">
+								<a class="teachContentButton modalFormButton" href="#teach">
+									записаться
+								</a>
+								<div class="teachContentBlockButtonAreaPrice">
+									<span>- от</span> 5.000 т.р.<br>
+									3 дня
 								</div>
 							</div>
 							<div class="sliderBlockButtonWrapper">
@@ -424,9 +626,6 @@
 							<h1 class="teachContentH1">
 								<span>“Б</span>рови для себя”
 							</h1>
-<!-- 							<h2 class="teachContentH2">
-								БАЗОВЫЙ КУРС
-							</h2> -->
 							<h3 class="teachContentH3">
 								Пакеты:
 							</h3>
@@ -474,19 +673,19 @@
 			<img src="images/schoolBottomRipple.png" alt="" class="ripple">	
 		</article>	
 		<article class="section about" data-anchor="about">
-			<header class="containerFluid">
+			<!-- <header class="containerFluid">
 				<div class="container">
 					<img src="images/logo.png" alt="" class="logo">
 					<ul>
-						<li><a class="menuLink" href="#main">Главная</a></li>
-						<li><a class="menuLink" href="#teach">Школа</a></li>
-						<li><a class="menuLink" href="#about">О нас</a></li>
-						<li><a class="menuLink" href="#reviews">Отзывы</a></li>
-						<li><a class="menuLink" href="#contacts">Контакты</a></li>
+						<li data-menuanchor="main" class="active"><a class="menuLink" href="#main">Главная</a></li>
+						<li data-menuanchor="teach"><a class="menuLink" href="#teach">Школа</a></li>
+						<li data-menuanchor="about"><a class="menuLink" href="#about">О нас</a></li>
+						<li data-menuanchor="reviews"><a class="menuLink" href="#reviews">Отзывы</a></li>
+						<li data-menuanchor="contacts"><a class="menuLink" href="#contacts">Контакты</a></li>
 					</ul>
 					<div class="phone">+7 (927) 291-78-88</div>
 				</div>
-			</header>
+			</header> -->
 				<div class="container">
 					<a class="toBottom menuLink" href="#teach">
 							<img src="images/arrowTop.png" alt="">
@@ -538,19 +737,19 @@
 				</div>
 		</article>
 		<article class="section reviews" data-anchor="reviews">
-			<header class="containerFluid">
+			<!-- <header class="containerFluid">
 				<div class="container">
 					<img src="images/logo.png" alt="" class="logo">
 					<ul>
-						<li><a class="menuLink" href="#main">Главная</a></li>
-						<li><a class="menuLink" href="#teach">Школа</a></li>
-						<li><a class="menuLink" href="#about">О нас</a></li>
-						<li><a class="menuLink" href="#reviews">Отзывы</a></li>
-						<li><a class="menuLink" href="#contacts">Контакты</a></li>
+						<li data-menuanchor="main" class="active"><a class="menuLink" href="#main">Главная</a></li>
+						<li data-menuanchor="teach"><a class="menuLink" href="#teach">Школа</a></li>
+						<li data-menuanchor="about"><a class="menuLink" href="#about">О нас</a></li>
+						<li data-menuanchor="reviews"><a class="menuLink" href="#reviews">Отзывы</a></li>
+						<li data-menuanchor="contacts"><a class="menuLink" href="#contacts">Контакты</a></li>
 					</ul>
 					<div class="phone">+7 (927) 291-78-88</div>
 				</div>
-			</header>
+			</header> -->
 				<div class="container">
 					<a class="toBottom menuLink" href="#about">
 						<img src="images/arrowTop.png" alt="">
@@ -599,19 +798,19 @@
 				</div>
 		</article>
 		<article class="section contacts" data-anchor="contacts">
-			<header class="containerFluid">
+			<!-- <header class="containerFluid">
 				<div class="container">
 					<img src="images/logo.png" alt="" class="logo">
 					<ul>
-						<li><a class="menuLink" href="#main">Главная</a></li>
-						<li><a class="menuLink" href="#teach">Школа</a></li>
-						<li><a class="menuLink" href="#about">О нас</a></li>
-						<li><a class="menuLink" href="#reviews">Отзывы</a></li>
-						<li><a class="menuLink" href="#contacts">Контакты</a></li>
+						<li data-menuanchor="main" class="active"><a class="menuLink" href="#main">Главная</a></li>
+						<li data-menuanchor="teach"><a class="menuLink" href="#teach">Школа</a></li>
+						<li data-menuanchor="about"><a class="menuLink" href="#about">О нас</a></li>
+						<li data-menuanchor="reviews"><a class="menuLink" href="#reviews">Отзывы</a></li>
+						<li data-menuanchor="contacts"><a class="menuLink" href="#contacts">Контакты</a></li>
 					</ul>
 					<div class="phone">+7 (927) 291-78-88</div>
 				</div>
-			</header>
+			</header> -->
 				<div class="container contactsBlock">
 					<img src="images/contactsLogo.png" alt="">
 					<h1 class="contactsH1">Наши контакты</h1>
@@ -627,6 +826,10 @@
 		</article>	
 	</div>
 <!-- Begin LeadBack code {literal} -->
+<div id="vk_community_messages"></div>
+<script type="text/javascript">
+VK.Widgets.CommunityMessages("vk_community_messages", 126228082);
+</script>
 <script>
     var _emv = _emv || [];
     _emv['campaign'] = 'df0b8fb21c532596752f0608';

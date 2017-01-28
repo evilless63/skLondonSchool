@@ -42,6 +42,7 @@ header {
     align-items: center;
     position: relative;
     z-index: 1000;
+    position: fixed
 }
 
 header > .container {
@@ -77,12 +78,16 @@ header > .container > .phone {
 	color: #e1261e;
 }
 
+article > .fp-tableCell > .container {
+    margin-top: 110px;
+}
+
 /*HEADER*/
 
 
 /*MAIN*/
 
-.main {
+/*.main {
 	background: url(../images/mainBackground.jpg) 0px 89px no-repeat;
 	background-size: cover;
 }
@@ -99,6 +104,26 @@ header > .container > .phone {
 
 .reviews {
 	background: url(../images/reviewsBackground.jpg) 0px 89px no-repeat;
+	background-size: cover;
+}*/
+
+.main {
+	background: url(../images/mainBackground.jpg) center no-repeat;
+	background-size: cover;
+}
+
+.teach {
+	background: url(../images/schoolBackground.jpg) center no-repeat;
+	background-size: cover;
+}
+
+.about {
+	background: url(../images/aboutBackground.jpg) center no-repeat;
+	background-size: cover;
+}
+
+.reviews {
+	background: url(../images/reviewsBackground.jpg) center no-repeat;
 	background-size: cover;
 }
 
@@ -189,6 +214,14 @@ header > .container > .phone {
 	background: url(../images/arrowRight.png) no-repeat !important;
 }
 
+.menuLink {
+	width: 40px;
+	text-align: center;
+}
+
+#navigation li.active a {
+    color: #e1261e;
+}
 
 /*SCHOOL*/
 
@@ -198,7 +231,9 @@ header > .container > .phone {
 }
 
 .teachContainer {
-	min-height: calc(100vh - 165px);
+	/*min-height: calc(100vh - 160px);*/
+	min-height: calc(100vh - 160px);
+/*    margin-top: 110px;*/
 }
 
 .teachDesc {
@@ -239,8 +274,10 @@ header > .container > .phone {
 .teachContentH1 {
 	color: #fff;
 	font-family: 'LatoWebBold';
-	font-size: 3em;
+	/*font-size: 3em;*/
+	font-size: 2.5em;
 	line-height: 0.8em;
+	margin-top: 15px;
 }
 
 .teachContentH1 span {
@@ -250,8 +287,9 @@ header > .container > .phone {
 .teachContentH2 {
 	color: #fff;
 	font-family: 'LatoWebBold';
-	font-size: 1.8em;
-	margin-top: 4vh;
+	/*font-size: 1.8em;*/
+	font-size: 1.5em;
+	margin-top: 3vh;
 }
 
 .teachContentH3 {
@@ -538,10 +576,12 @@ ol > li {
 
 .displayTabs {
     display:flex !important;
+    transition: 200ms;
 }  
 
 .displayTabsNone {
 	display:none !important;
+	transition: 200ms;
 }  
 
 
@@ -630,8 +670,9 @@ ol > li {
 }
 
 .tabs_active {
-	    background: #000;
+	background: #000;
     color: #fff;
+    transition: 200ms;
 }
 
 .teachContent {
@@ -640,4 +681,41 @@ ol > li {
 
 .teachContentZaglushka {
 	 width: 480px;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 1024px) , screen and (max-height: 769px) {
+  
+	header {
+		height: 55px;
+	}
+
+	header > .container > img {
+		height: 50px;
+	}
+
+	article > .fp-tableCell > .container {
+    margin-top: 65px;
+	}
+
+	.toBottom {
+	    margin: 12vh auto -20px auto;
+	}
+
+	.aboutRowBottom {
+	    display: flex;
+	    margin-top: 7vh;
+	    justify-content: center;
+	}
+
+	article.teach > .fp-tableCell > .container {
+	    height: 565px;
+	}
+
+	.teachDesc {
+		height: 500px;
+	}
+
 }

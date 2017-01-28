@@ -11,7 +11,8 @@ $(document).ready(function(){
 	});
 
 	$('#fullpage').fullpage({
-		anchors:['main', 'teach']
+		anchors:['main', 'teach', 'about', 'reviews', 'contacts'],
+		menu: '#navigation'
 	});
 
 	$('.menuLink').click(function(){
