@@ -11,6 +11,7 @@ body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
+	position: relative;
 }
 
 img {   max-width: 100% }
@@ -501,10 +502,10 @@ ol > li {
 
 /*MEDIA QUERIES*/
 
-@media (min-height: 901px) {
+@media (min-height: 900px) {
 	 .sliderBlock {
 	    text-align: left;
-	    height: 650px !important;
+	     height: 560px !important;
 	}
 
 		.mainSlider  {
@@ -553,12 +554,29 @@ ol > li {
 	    margin-top: 6vh;
 	}
 
-	.teachDesc {
-	    display: flex;
-	    justify-content: space-between;
-	    margin-top: 12vh;
-	    margin-bottom: 8vh;
+.teachDesc {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12vh;
+    padding-top: 10vh;
+    margin-bottom: 8vh;
+    height: 500px;
+}
+
+article > .fp-tableCell > .container {
+	    margin-top: 130px;
 	}
+
+	.contactsBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5vh;
+    position: relative;
+    z-index: 10000;
+    margin-bottom: -345px !important;
+}
 
 }
 
@@ -587,7 +605,7 @@ ol > li {
 
 
 .modalWindowWrapper {
-	background: rgba(0, 0, 0, 0.4);
+	background: rgba(0, 0, 0, 0.7);
 	display: none;
 	position: absolute;
 	width: 100%;
@@ -596,9 +614,9 @@ ol > li {
 }
 
 .modalWindow {
-	background: url(../images/modalBackground.jpg) top center no-repeat;
-	width: 830px;
-	height: 559px;
+    background: url(../images/modalBackground.jpg) center no-repeat;
+    width: 830px;
+    height: 555px;
 	margin: 4% auto;
 	position: relative;
 	display: flex;
@@ -627,6 +645,8 @@ ol > li {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 25px;
+	margin-top: 25px;
 }
 
 .modalWindowTogglerButton {
@@ -658,15 +678,55 @@ ol > li {
 }
 
 .modalWindowTogglerCourses {
-	border-top-left-radius: 30%;
-	border-bottom-left-radius: 30%; 
+	border-top-left-radius: 55%;
+	border-bottom-left-radius: 55%; 
 	border-right: none;
 }
 
 .modalWindowTogglerModel {
-	border-top-right-radius: 30%;
-	border-bottom-right-radius: 30%;
+	border-top-right-radius: 55%;
+	border-bottom-right-radius: 55%;
 	border-left: none;
+}
+
+.rowContactModal {
+	display: flex;
+	justify-content: space-between;
+	width: 630px;
+	margin-top: 25px;
+}
+
+.rowContactModal > .inputContactModal {
+	border: 2px solid #fff;
+	border-radius: 6px;
+	color: #fff;
+	font-family: 'LatoWebBold';
+	font-size: 1em;
+	padding: 12px 32px; 
+	width: 230px;
+}
+
+
+.rowContactModal > input {
+	background: transparent;
+}
+
+.rowContactModal > input::-webkit-input-placeholder {color:#fff;}
+.rowContactModal > input::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+.rowContactModal > input:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+.rowContactModal > input:-ms-input-placeholder      {color:#fff;}
+
+.buttonContactModal {
+	border: 2px solid #fff;
+	border-radius: 6px;
+	color: #fff;
+	font-family: 'LatoWebBold';
+	font-size: 1em;
+	padding: 12px 32px; 
+	width: 100px;
+	text-align: center;
+	margin-top: 105px;
+	cursor: pointer;
 }
 
 .tabs_active {
@@ -716,6 +776,47 @@ ol > li {
 
 	.teachDesc {
 		height: 500px;
+	}
+
+	.contactsBlock {
+		margin-top: 90px !important;
+	}
+
+}
+
+@media screen and (max-width: 1024px) , screen and (min-height: 1024px) {
+
+	article > .fp-tableCell > .container {
+	    margin-top: 125px;
+	}
+
+	.sliderBlock {
+	    text-align: left;
+	     height: 680px !important;
+	}
+
+	.teachDesc {
+	    height: 620px;
+	}
+
+	.teachContainer {
+	    /* min-height: calc(100vh - 160px); */
+	    min-height: calc(99vh - 160px);
+	    /* margin-top: 110px; */
+	}
+
+	.teachDesc {
+	    display: flex;
+	    justify-content: space-between;
+	    margin-top: 12vh;
+	    padding-top: 10vh;
+	    margin-bottom: 5vh;
+	}
+
+	.toBottom {
+	    margin: 15.5vh auto -20px auto;
+	    display: flex;
+	    justify-content: center;
 	}
 
 }

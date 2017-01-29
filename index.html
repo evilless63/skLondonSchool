@@ -30,8 +30,19 @@
 			Записаться на курсы
 		</div>
 		<div class="modalWindowToggler">
-			<span class="modalWindowTogglerCourses modalWindowTogglerButton" text="Записаться на курсы" >Курсы</span>
-			<span class="modalWindowTogglerModel modalWindowTogglerButton" text="Записаться в качестве модели" >Моделью</span>
+			<span class="modalWindowTogglerCourses modalWindowTogglerButton" mailText="Записаться на курсы" >Курсы</span>
+			<span class="modalWindowTogglerModel modalWindowTogglerButton" mailText="Записаться в качестве модели" >Моделью</span>
+		</div>
+		<div class="rowContactModal">
+			<input type="text" class="inputContactModal mailName" placeholder="Введите Ваше имя">
+			<input type="text" class="inputContactModal mailSurname" placeholder="Введите Вашу фамилию">
+		</div>
+		<div class="rowContactModal">
+			<input type="text" class="inputContactModal mailPhone" placeholder="Введите Ваш телефон">
+			<input type="text" class="inputContactModal mailPost" placeholder="Введите Вашу почту">
+		</div>
+		<div class="buttonContactModal">
+			Записаться
 		</div>
 	</div>
 </div>	
@@ -175,14 +186,8 @@
 							</a>
 						</div>
 						<div class="secondTabs" id="vizazh">
-							<a href="#" class="secondTabs_tab">
-								Базовый курс Виз
-							</a>
-							<a href="#" class="secondTabs_tab">
-								Стаж работы менее 1 года Виз
-							</a>
-							<a href="#" class="secondTabs_tab">
-								Повышение квалификации Виз
+							<a href="#" idOpen="razrab" class="secondTabs_tab">
+								Раздел в разработке
 							</a>
 						</div>
 						<div class="secondTabs" id="brovi">
@@ -224,7 +229,7 @@
 								<li>5.&nbsp;&nbsp;Укладки;</li>
 							</ol>
 							<div class="teachContentBlockButtonArea">
-								<a class="teachContentButton modalFormButton" href="#teach">
+								<a class="teachContentButton modalFormButton" idModal="courses" href="#teach">
 									записаться
 								</a>
 								<div class="teachContentBlockButtonAreaPrice">
@@ -233,7 +238,7 @@
 								</div>
 							</div>
 							<div class="sliderBlockButtonWrapper">
-								<a class="teachContentButton modalFormButton" href="#teach">
+								<a class="teachContentButton modalFormButton" idModal="model" href="#teach">
 									записаться моделью
 								</a>
 							</div>
@@ -255,7 +260,7 @@
 								<li>4.&nbsp;&nbsp;Укладки, прически;</li>
 							</ol>
 							<div class="teachContentBlockButtonArea">
-								<a class="teachContentButton modalFormButton" href="#teach">
+								<a class="teachContentButton modalFormButton" idModal="courses" href="#teach">
 									записаться
 								</a>
 								<div class="teachContentBlockButtonAreaPrice">
@@ -264,7 +269,7 @@
 								</div>
 							</div>
 							<div class="sliderBlockButtonWrapper">
-								<a class="teachContentButton modalFormButton" href="#teach">
+								<a class="teachContentButton modalFormButton" idModal="model" href="#teach">
 									записаться моделью
 								</a>
 							</div>
@@ -286,7 +291,7 @@
 								<li>4.&nbsp;&nbsp;Локоны;</li>
 							</ol>
 							<div class="teachContentBlockButtonArea">
-								<a class="teachContentButton modalFormButton" href="#teach">
+								<a class="teachContentButton modalFormButton" idModal="courses" href="#teach">
 									записаться
 								</a>
 								<div class="teachContentBlockButtonAreaPrice">
@@ -295,7 +300,7 @@
 								</div>
 							</div>
 							<div class="sliderBlockButtonWrapper">
-								<a class="teachContentButton modalFormButton" href="#teach">
+								<a class="teachContentButton modalFormButton" idModal="model" href="#teach">
 									записаться моделью
 								</a>
 							</div>
@@ -320,7 +325,7 @@
 								<li>6.&nbsp;&nbsp;SPA- уход;</li>
 							</ol>
 							<div class="teachContentBlockButtonArea">
-								<a class="teachContentButton modalFormButton" href="#teach">
+								<a class="teachContentButton modalFormButton" idModal="courses" href="#teach">
 									записаться
 								</a>
 								<div class="teachContentBlockButtonAreaPrice">
@@ -329,7 +334,7 @@
 								</div>
 							</div>
 							<div class="sliderBlockButtonWrapper">
-								<a class="teachContentButton modalFormButton" href="#teach">
+								<a class="teachContentButton modalFormButton" idModal="model" href="#teach">
 									записаться моделью
 								</a>
 							</div>
@@ -353,7 +358,7 @@
 								<li>6.&nbsp;&nbsp;SPA - уход;</li>
 							</ol>
 							<div class="teachContentBlockButtonArea">
-								<a class="teachContentButton modalFormButton" href="#teach">
+								<a class="teachContentButton modalFormButton" idModal="courses" href="#teach">
 									записаться
 								</a>
 								<div class="teachContentBlockButtonAreaPrice">
@@ -362,7 +367,7 @@
 								</div>
 							</div>
 							<div class="sliderBlockButtonWrapper">
-								<a class="teachContentButton modalFormButton" href="#teach">
+								<a class="teachContentButton modalFormButton" idModal="model" href="#teach">
 									записаться моделью
 								</a>
 							</div>
@@ -385,7 +390,7 @@
 								<li>4.&nbsp;&nbsp;Массаж стоп;</li>
 							</ol>
 							<div class="teachContentBlockButtonArea">
-								<a class="teachContentButton modalFormButton" href="#teach">
+								<a class="teachContentButton modalFormButton" idModal="courses" href="#teach">
 									записаться
 								</a>
 								<div class="teachContentBlockButtonAreaPrice">
@@ -394,7 +399,7 @@
 								</div>
 							</div>
 							<div class="sliderBlockButtonWrapper">
-								<a class="teachContentButton modalFormButton" href="#teach">
+								<a class="teachContentButton modalFormButton" idModal="model" href="#teach">
 									записаться моделью
 								</a>
 							</div>
@@ -416,7 +421,7 @@
 								<li>7.&nbsp;&nbsp;Рисунки песком;</li>
 							</ol>
 							<div class="teachContentBlockButtonArea">
-								<a class="teachContentButton modalFormButton" href="#teach">
+								<a class="teachContentButton modalFormButton" idModal="courses" href="#teach">
 									записаться
 								</a>
 								<div class="teachContentBlockButtonAreaPrice">
@@ -425,7 +430,7 @@
 								</div>
 							</div>
 							<div class="sliderBlockButtonWrapper">
-								<a class="teachContentButton modalFormButton" href="#teach">
+								<a class="teachContentButton modalFormButton" idModal="model" href="#teach">
 									записаться моделью
 								</a>
 							</div>
@@ -446,7 +451,7 @@
 								<li>4.&nbsp;&nbsp;Современные экспресс дизайны;</li>
 							</ol>
 							<div class="teachContentBlockButtonArea">
-								<a class="teachContentButton modalFormButton" href="#teach">
+								<a class="teachContentButton modalFormButton" idModal="courses" href="#teach">
 									записаться
 								</a>
 								<div class="teachContentBlockButtonAreaPrice">
@@ -455,7 +460,7 @@
 								</div>
 							</div>
 							<div class="sliderBlockButtonWrapper">
-								<a class="teachContentButton modalFormButton" href="#teach">
+								<a class="teachContentButton modalFormButton" idModal="model" href="#teach">
 									записаться моделью
 								</a>
 							</div>
@@ -476,7 +481,7 @@
 								<li>6.&nbsp;&nbsp;Стандарты и сан.нормы;</li>
 							</ol>
 							<div class="teachContentBlockButtonArea">
-								<a class="teachContentButton modalFormButton" href="#teach">
+								<a class="teachContentButton modalFormButton" idModal="courses" href="#teach">
 									записаться
 								</a>
 								<div class="teachContentBlockButtonAreaPrice">
@@ -485,10 +490,16 @@
 								</div>
 							</div>
 							<div class="sliderBlockButtonWrapper">
-								<a class="teachContentButton modalFormButton" href="#teach">
+								<a class="teachContentButton modalFormButton" idModal="model" href="#teach">
 									записаться моделью
 								</a>
 							</div>
+						</div>
+
+						<div class="teachContent" id="razrab">
+							<h1 class="teachContentH1">
+								<span>“Р</span>аздел в разработке”
+							</h1>
 						</div>
 
 						<div class="teachContent" id="BrowStilist">
@@ -511,7 +522,7 @@
 								<li>6.&nbsp;&nbsp;Финишное оформление;</li>
 							</ol>
 							<div class="teachContentBlockButtonArea">
-								<a class="teachContentButton modalFormButton" href="#teach">
+								<a class="teachContentButton modalFormButton" idModal="courses" href="#teach">
 									записаться
 								</a>
 								<div class="teachContentBlockButtonAreaPrice">
@@ -520,7 +531,7 @@
 								</div>
 							</div>
 							<div class="sliderBlockButtonWrapper">
-								<a class="teachContentButton modalFormButton" href="#teach">
+								<a class="teachContentButton modalFormButton" idModal="model" href="#teach">
 									записаться моделью
 								</a>
 							</div>
@@ -541,7 +552,7 @@
 								<li>3.&nbsp;&nbsp;Разбор ошибок;</li>
 							</ol>
 							<div class="teachContentBlockButtonArea">
-								<a class="teachContentButton modalFormButton" href="#teach">
+								<a class="teachContentButton modalFormButton" idModal="courses" href="#teach">
 									записаться
 								</a>
 								<div class="teachContentBlockButtonAreaPrice">
@@ -550,7 +561,7 @@
 								</div>
 							</div>
 							<div class="sliderBlockButtonWrapper">
-								<a class="teachContentButton modalFormButton" href="#teach">
+								<a class="teachContentButton modalFormButton" idModal="model" href="#teach">
 									записаться моделью
 								</a>
 							</div>
@@ -576,7 +587,7 @@
 								<li>7.&nbsp;&nbsp;Разбор ошибок;</li>
 							</ol>
 							<div class="teachContentBlockButtonArea">
-								<a class="teachContentButton modalFormButton" href="#teach">
+								<a class="teachContentButton modalFormButton" idModal="courses" href="#teach">
 									записаться
 								</a>
 								<div class="teachContentBlockButtonAreaPrice">
@@ -585,7 +596,7 @@
 								</div>
 							</div>
 							<div class="sliderBlockButtonWrapper">
-								<a class="teachContentButton modalFormButton" href="#teach">
+								<a class="teachContentButton modalFormButton" idModal="model" href="#teach">
 									записаться моделью
 								</a>
 							</div>
@@ -608,7 +619,7 @@
 								<li>5.&nbsp;&nbsp;Работа со сложными бровями;</li>
 							</ol>
 							<div class="teachContentBlockButtonArea">
-								<a class="teachContentButton modalFormButton" href="#teach">
+								<a class="teachContentButton modalFormButton" idModal="courses" href="#teach">
 									записаться
 								</a>
 								<div class="teachContentBlockButtonAreaPrice">
@@ -617,7 +628,7 @@
 								</div>
 							</div>
 							<div class="sliderBlockButtonWrapper">
-								<a class="teachContentButton modalFormButton" href="#teach">
+								<a class="teachContentButton modalFormButton" idModal="model" href="#teach">
 									записаться моделью
 								</a>
 							</div>
@@ -638,7 +649,7 @@
 								<li>6.&nbsp;&nbsp;Окрашивание бровей хной;</li>
 							</ol>
 							<div class="teachContentBlockButtonArea">
-								<a class="teachContentButton modalFormButton" href="#teach">
+								<a class="teachContentButton modalFormButton" idModal="courses" href="#teach">
 									записаться
 								</a>
 								<div class="teachContentBlockButtonAreaPrice">
@@ -647,7 +658,7 @@
 								</div>
 							</div>
 							<div class="sliderBlockButtonWrapper">
-								<a class="teachContentButton modalFormButton" href="#teach">
+								<a class="teachContentButton modalFormButton" idModal="model" href="#teach">
 									записаться моделью
 								</a>
 							</div>
