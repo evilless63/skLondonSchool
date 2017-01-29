@@ -4,8 +4,8 @@ if((isset($_POST['name'])&&$_POST['name']!="")
 &&(isset($_POST['surname'])&&$_POST['surname']!="")
 &&(isset($_POST['phone'])&&$_POST['phone']!="")
 &&(isset($_POST['post'])&&$_POST['post']!="")
-&&(isset($_POST['status'])&&$_POST['status']!="")){ //Проверка отправилось ли наше поля name и не пустые ли они
-        $to = 'vitaliy030589@gmail.com'; //Почта получателя, через запятую можно указать сколько угодно адресов
+&&(isset($_POST['status'])&&$_POST['status']!="")){
+        $to = 'london.beauty163@mail.ru'; 
         $message = '
                 <html>
                     <head>
@@ -19,9 +19,10 @@ if((isset($_POST['name'])&&$_POST['name']!="")
                         <p>Тип записи: хочет '.htmlspecialchars($_POST['status']).'</p>                        
                     </body>
                 </html>'; //Текст нащего сообщения можно использовать HTML теги
-        $headers  = "Content-type: text/html; charset=utf-8 \r\n"; //Кодировка письма
-        $headers .= "From: Учебный центр «LONDON» <londonschool163@london.com>\r\n"; //Наименование и почта отправителя
-        mail($to, $subject, $message, $headers); //Отправка письма с помощью функции mail
+        $headers = "MIME-Version: 1.0" . "\r\n";
+        $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+        $headers .= "From: Учебный центр «LONDON»\r\n"; 
+        mail($to, $subject, $message, $headers);
 
         echo "Заявка успешно отправлена !";
 } else {

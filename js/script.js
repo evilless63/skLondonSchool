@@ -169,5 +169,9 @@ $(document).ready(function(){
 
 	});
 
+	if($(window).width() <= 980) {
+		$('.section').addClass('fp-auto-height-responsive');
+	}
+
 
 });
